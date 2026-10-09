@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBC The Box Chef - Official Menu & Order</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#0D0D0D',
+                        brandCard: '#1A1A1A',
+                        brandGold: '#F4B41A',
+                        brandGoldDark: '#C68E0E'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap');
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #0D0D0D;
+            color: #F3F4F6;
+        }
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-brandDark text-slate-100 antialiased selection:bg-brandGold selection:text-black">
+
+    <!-- Top Contact Bar -->
+    <div class="bg-brandGold text-black font-bold py-2 px-4 text-center text-sm md:text-base flex items-center justify-center space-x-2 shadow-md">
+        <i class="fa-solid fa-phone-volume animate-bounce"></i>
+        <span>FOR ORDER CONTACT: <a href="tel:9163614910" class="underline hover:text-white transition">9163614910</a></span>
+        <span class="mx-2">•</span>
+        <span class="hidden sm:inline">GOOD FOOD • GREAT MOOD</span>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-brandDark/95 backdrop-blur-md border-b border-neutral-800 shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 rounded-full border-2 border-brandGold overflow-hidden bg-black flex items-center justify-center shadow-lg">
+                    <!-- Logo representation based on user upload -->
+                    <div class="text-brandGold font-extrabold text-xs text-center leading-none">TBC<br><span class="text-[8px]">BOX CHEF</span></div>
+                </div>
+                <div>
+                    <h1 class="text-lg sm:text-xl font-extrabold text-brandGold tracking-wider heading-font">TBC THE BOX CHEF</h1>
+                    <span class="text-[10px] uppercase tracking-widest text-neutral-400 block">Cloud Kitchen & Fast Food</span>
+                </div>
+            </div>
+
+            <!-- Quick Action -->
+            <div class="flex items-center space-x-3">
+                <a href="https://wa.me/919163614910?text=Hi%20TBC%20The%20Box%20Chef,%20I%20want%20to%20place%20an%20order!" target="_blank" 
+                   class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-2.5 rounded-xl shadow-lg transition flex items-center space-x-2 text-sm">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span class="hidden sm:inline">Order WhatsApp</span>
+                </a>
+                <a href="tel:9163614910" class="bg-brandGold hover:bg-brandGoldDark text-black font-bold px-4 py-2.5 rounded-xl shadow-lg transition flex items-center space-x-2 text-sm">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call Now</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="relative py-16 lg:py-24 bg-gradient-to-b from-neutral-900 to-brandDark border-b border-neutral-800 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="inline-block bg-brandGold/10 text-brandGold border border-brandGold/30 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-4">
+                ✨ Fresh • Tasty • Homemade
+            </span>
+            <h2 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight heading-font mb-6">
+                Welcome to <span class="text-brandGold">The Box Chef</span>
+            </h2>
+            <p class="text-neutral-400 text-base sm:text-lg max-w-2xl mx-auto mb-8">
+                Explore our mouth-watering menu featuring fresh Pizzas, Juicy Burgers, Crispy Fries, Momos, Sandwiches, Shakes, and Maggie! Prepared with utmost hygiene.
+            </p>
+            <div class="flex flex-wrap justify-center gap-3">
+                <a href="#pizza" class="bg-brandGold text-black font-bold px-5 py-2.5 rounded-xl hover:bg-brandGoldDark transition text-sm">🍕 Pizza</a>
+                <a href="#burger" class="bg-neutral-800 text-white hover:bg-brandGold hover:text-black font-bold px-5 py-2.5 rounded-xl transition text-sm border border-neutral-700">🍔 Burger</a>
+                <a href="#fries" class="bg-neutral-800 text-white hover:bg-brandGold hover:text-black font-bold px-5 py-2.5 rounded-xl transition text-sm border border-neutral-700">🍟 Fries</a>
+                <a href="#sandwich" class="bg-neutral-800 text-white hover:bg-brandGold hover:text-black font-bold px-5 py-2.5 rounded-xl transition text-sm border border-neutral-700">🥪 Sandwich</a>
+                <a href="#momo" class="bg-neutral-800 text-white hover:bg-brandGold hover:text-black font-bold px-5 py-2.5 rounded-xl transition text-sm border border-neutral-700">🥟 Momo</a>
+                <a href="#shakes" class="bg-neutral-800 text-white hover:bg-brandGold hover:text-black font-bold px-5 py-2.5 rounded-xl transition text-sm border border-neutral-700">🥤 Shakes</a>
+                <a href="#maggie" class="bg-neutral-800 text-white hover:bg-brandGold hover:text-black font-bold px-5 py-2.5 rounded-xl transition text-sm border border-neutral-700">🍜 Maggie</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Menu Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
+
+        <!-- 1. Pizza Section -->
+        <section id="pizza" class="bg-brandCard border border-neutral-800 rounded-3xl p-6 sm:p-10 shadow-xl">
+            <div class="flex items-center justify-between border-b border-neutral-800 pb-4 mb-8">
+                <h3 class="text-3xl font-extrabold text-brandGold heading-font flex items-center space-x-3">
+                    <span>🍕</span> <span>Pizza</span>
+                </h3>
+                <span class="text-xs uppercase bg-neutral-800 text-neutral-300 px-3 py-1 rounded-full font-semibold">Fresh & Hot</span>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
+                <!-- Item -->
+                <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3 hover:bg-neutral-800/30 px-2 rounded transition">
+                    <span class="font-medium text-neutral-200">Chicken Sausage</span>
+                    <span class="text-brandGold font-bold text-lg">₹119</span>
+                </div>
+                <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3 hover:bg-neutral-800/30 px-2 rounded transition">
+                    <span class="font-medium text-neutral-200">Chicken Barbeque</span>
+                    <span class="text-brandGold font-bold text-lg">₹129</span>
+                </div>
+                <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3 hover:bg-neutral-800/30 px-2 rounded transition">
+                    <span class="font-medium text-neutral-200">Chicken Makhani Pizza</span>
+                    <span class="text-brandGold font-bold text-lg">₹149</span>
+                </div>
+                <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3 hover:bg-neutral-800/30 px-2 rounded transition">
+                    <span class="font-medium text-neutral-200">Chicken Tikka Pizza</span>
+                    <span class="text-brandGold font-bold text-lg">₹119</span>
+                </div>
+                <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3 hover:bg-neutral-800/30 px-2 rounded transition">
+                    <span class="font-medium text-neutral-200">Corn Cheese</span>
+                    <span class="text-brandGold font-bold text-lg">₹119</span>
+                </div>
+                <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3 hover:bg-neutral-800/30 px-2 rounded transition">
+                    <span class="font-medium text-neutral-200">Farm House (C.S.)</span>
+                    <span class="text-brandGold font-bold text-lg">₹179</span>
+                </div>
+                <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3 hover:bg-neutral-800/30 px-2 rounded transition">
+                    <span class="font-medium text-neutral-200">Margherita</span>
+                    <span class="text-brandGold font-bold text-lg">₹99</span>
+                </div>
+                <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3 hover:bg-neutral-800/30 px-2 rounded transition">
+                    <span class="font-medium text-neutral-200">Paneer Tikka Makhani</span>
+                    <span class="text-brandGold font-bold text-lg">₹139</span>
+                </div>
+                <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3 hover:bg-neutral-800/30 px-2 rounded transition">
+                    <span class="font-medium text-neutral-200">Paneer Normal</span>
+                    <span class="text-brandGold font-bold text-lg">₹119</span>
+                </div>
+                <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3 hover:bg-neutral-800/30 px-2 rounded transition">
+                    <span class="font-medium text-neutral-200">Onion & Capsicum</span>
+                    <span class="text-brandGold font-bold text-lg">₹109</span>
+                </div>
+                <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3 hover:bg-neutral-800/30 px-2 rounded transition">
+                    <span class="font-medium text-neutral-200">Onion</span>
+                    <span class="text-brandGold font-bold text-lg">₹99</span>
+                </div>
+                <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3 hover:bg-neutral-800/30 px-2 rounded transition">
+                    <span class="font-medium text-neutral-200">Tomato</span>
+                    <span class="text-brandGold font-bold text-lg">₹79</span>
+                </div>
+                <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3 hover:bg-neutral-800/30 px-2 rounded transition">
+                    <span class="font-medium text-neutral-200">Corn</span>
+                    <span class="text-brandGold font-bold text-lg">₹89</span>
+                </div>
+                <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3 hover:bg-neutral-800/30 px-2 rounded transition">
+                    <span class="font-medium text-neutral-200">Capsicum</span>
+                    <span class="text-brandGold font-bold text-lg">₹99</span>
+                </div>
+                <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3 hover:bg-neutral-800/30 px-2 rounded transition">
+                    <span class="font-medium text-neutral-200">Barbeque Mushroom</span>
+                    <span class="text-brandGold font-bold text-lg">₹119</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <!-- 2. Burger Section -->
+            <section id="burger" class="bg-brandCard border border-neutral-800 rounded-3xl p-6 sm:p-10 shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between border-b border-neutral-800 pb-4 mb-8">
+                        <h3 class="text-3xl font-extrabold text-brandGold heading-font flex items-center space-x-3">
+                            <span>🍔</span> <span>Burger</span>
+                        </h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Chicken Burger</span>
+                            <span class="text-brandGold font-bold text-lg">₹149</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Chicken Cheese Burger</span>
+                            <span class="text-brandGold font-bold text-lg">₹169</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Veg Patty</span>
+                            <span class="text-brandGold font-bold text-lg">₹129</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Paneer Burger</span>
+                            <span class="text-brandGold font-bold text-lg">₹139</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Grilled Chicken Burger</span>
+                            <span class="text-brandGold font-bold text-lg">₹199</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Grilled Paneer Burger</span>
+                            <span class="text-brandGold font-bold text-lg">₹169</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 bg-neutral-900 border border-brandGold/40 p-4 rounded-2xl flex justify-between items-center">
+                    <span class="font-bold text-sm text-brandGold">Extra Cheese Add-on</span>
+                    <span class="font-extrabold text-white text-lg">₹30</span>
+                </div>
+            </section>
+
+            <!-- 3. Fries Item Section -->
+            <section id="fries" class="bg-brandCard border border-neutral-800 rounded-3xl p-6 sm:p-10 shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between border-b border-neutral-800 pb-4 mb-8">
+                        <h3 class="text-3xl font-extrabold text-brandGold heading-font flex items-center space-x-3">
+                            <span>🍟</span> <span>Fries Item</span>
+                        </h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">French Fry</span>
+                            <span class="text-brandGold font-bold text-lg">₹79</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Peri Peri Fries</span>
+                            <span class="text-brandGold font-bold text-lg">₹89</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Cheesy Fries</span>
+                            <span class="text-brandGold font-bold text-lg">₹109</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Bhekti Fish Fry with Chips</span>
+                            <span class="text-brandGold font-bold text-lg">₹179</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Bhekti Fish Finger (5 pcs)</span>
+                            <span class="text-brandGold font-bold text-lg">₹220</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Chicken Cheese Ball (5 pcs)</span>
+                            <span class="text-brandGold font-bold text-lg">₹180</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <!-- 4. Sandwich Section -->
+            <section id="sandwich" class="bg-brandCard border border-neutral-800 rounded-3xl p-6 sm:p-10 shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between border-b border-neutral-800 pb-4 mb-8">
+                        <h3 class="text-3xl font-extrabold text-brandGold heading-font flex items-center space-x-3">
+                            <span>🥪</span> <span>Sandwich</span>
+                        </h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Veg</span>
+                            <span class="text-brandGold font-bold text-lg">₹89</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Corn Cheese</span>
+                            <span class="text-brandGold font-bold text-lg">₹99</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Farmhouse</span>
+                            <span class="text-brandGold font-bold text-lg">₹149</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Paneer Tikka</span>
+                            <span class="text-brandGold font-bold text-lg">₹169</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Chicken Cheese</span>
+                            <span class="text-brandGold font-bold text-lg">₹169</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Chicken Tikka</span>
+                            <span class="text-brandGold font-bold text-lg">₹179</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 bg-neutral-900 border border-brandGold/40 p-4 rounded-2xl flex justify-between items-center">
+                    <span class="font-bold text-sm text-brandGold">Extra Cheese Add-on</span>
+                    <span class="font-extrabold text-white text-lg">₹30</span>
+                </div>
+            </section>
+
+            <!-- 5. Momo Section -->
+            <section id="momo" class="bg-brandCard border border-neutral-800 rounded-3xl p-6 sm:p-10 shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between border-b border-neutral-800 pb-4 mb-8">
+                        <h3 class="text-3xl font-extrabold text-brandGold heading-font flex items-center space-x-3">
+                            <span>🥟</span> <span>Momo</span>
+                        </h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Chicken Steamed</span>
+                            <span class="text-brandGold font-bold text-lg">₹109</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Chicken Fry</span>
+                            <span class="text-brandGold font-bold text-lg">₹119</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Chicken Pan Fried</span>
+                            <span class="text-brandGold font-bold text-lg">₹139</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Veg Steamed</span>
+                            <span class="text-brandGold font-bold text-lg">₹99</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Veg Fry</span>
+                            <span class="text-brandGold font-bold text-lg">₹109</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Veg Pan Fry</span>
+                            <span class="text-brandGold font-bold text-lg">₹129</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Paneer</span>
+                            <span class="text-brandGold font-bold text-lg">₹109</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Corn & Cheese (Steamed / Fry)</span>
+                            <span class="text-brandGold font-bold text-sm sm:text-base">₹119 / ₹129</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <!-- 6. Shakes Section -->
+            <section id="shakes" class="bg-brandCard border border-neutral-800 rounded-3xl p-6 sm:p-10 shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between border-b border-neutral-800 pb-4 mb-8">
+                        <h3 class="text-3xl font-extrabold text-brandGold heading-font flex items-center space-x-3">
+                            <span>🥤</span> <span>Shakes</span>
+                        </h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Kitkat</span>
+                            <span class="text-brandGold font-bold text-lg">₹139</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Chocolate</span>
+                            <span class="text-brandGold font-bold text-lg">₹119</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Oreo</span>
+                            <span class="text-brandGold font-bold text-lg">₹129</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Strawberry</span>
+                            <span class="text-brandGold font-bold text-lg">₹109</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Butterscotch</span>
+                            <span class="text-brandGold font-bold text-lg">₹109</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7. Maggie Section -->
+            <section id="maggie" class="bg-brandCard border border-neutral-800 rounded-3xl p-6 sm:p-10 shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between border-b border-neutral-800 pb-4 mb-8">
+                        <h3 class="text-3xl font-extrabold text-brandGold heading-font flex items-center space-x-3">
+                            <span>🍜</span> <span>Maggie</span>
+                        </h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Plain</span>
+                            <span class="text-brandGold font-bold text-lg">₹49</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Veg</span>
+                            <span class="text-brandGold font-bold text-lg">₹69</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Cheese</span>
+                            <span class="text-brandGold font-bold text-lg">₹89</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Egg</span>
+                            <span class="text-brandGold font-bold text-lg">₹89</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Chicken</span>
+                            <span class="text-brandGold font-bold text-lg">₹89</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-neutral-800/60 pb-3">
+                            <span class="font-medium text-neutral-200">Corn & Chicken</span>
+                            <span class="text-brandGold font-bold text-lg">₹119</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Floating Order CTA Footer -->
+    <footer class="bg-neutral-900 border-t border-neutral-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white heading-font mb-4">Ready to Order Delicious Food?</h3>
+            <p class="text-neutral-400 mb-8 max-w-xl mx-auto">Call us directly or send a WhatsApp message to place your order right away.</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://wa.me/919163614910?text=Hi%20TBC%20The%20Box%20Chef,%20I%20want%20to%20place%20an%20order!" target="_blank" 
+                   class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-4 rounded-xl shadow-xl transition flex items-center justify-center space-x-3 text-lg">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span>Order via WhatsApp</span>
+                </a>
+                <a href="tel:9163614910" 
+                   class="w-full sm:w-auto bg-brandGold hover:bg-brandGoldDark text-black font-bold px-8 py-4 rounded-xl shadow-xl transition flex items-center justify-center space-x-3 text-lg">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call 9163614910</span>
+                </a>
+            </div>
+            <div class="mt-12 text-neutral-500 text-sm">
+                <p>&copy; 2026 TBC The Box Chef. Fresh Ingredients • Hygienic Kitchen • Home Style Taste.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
+eof
